@@ -168,8 +168,8 @@ async function loadModel() {
     recognizer = speechCommands.create(
         'BROWSER_FFT',
         undefined,
-        'http://localhost//model.json',
-        'http://localhost//metadata.json'
+        'https://kennybloody.github.io/audio-model-is24/model.json',
+        'https://kennybloody.github.io/audio-model-is24/metadata.json'
     );
     await recognizer.ensureModelLoaded();
     statusEl.textContent = 'Модель загружена. Нажмите "Запустить микрофон".';
